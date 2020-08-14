@@ -1,0 +1,14 @@
+{
+	"name": "subcription-jamstack",
+	"version": "1.0.0",
+	"description": "learn with jason stripe netlify funcion and identity",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "npm start"
+	},
+	"author": "Corey Taylor",
+	"license": "ISC",
+	"devDependencies": {
+		"@11ty/eleventy": "^0.11.0"
+	}
+}
