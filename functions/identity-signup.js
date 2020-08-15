@@ -6,9 +6,10 @@ exports.handler = async (event) => {
 
 	//Create a Stripe customer object
 	const customer = await stripe.customers.create({ email: user.email });
+
 	await stripe.subscriptions.create({
 		customer : 'customer.id',
-		items    : [ { price: 'price_1HGOFyIcj9StUsGylelAOwcw' } ]
+		items    : [ { price: 'price_1HGOLsIcj9StUsGyd5wDVmgs' } ]
 	});
 
 	const netlifyID = user.id;
