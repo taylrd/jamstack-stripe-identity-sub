@@ -8,7 +8,7 @@ exports.handler = async (event) => {
 	const customer = await stripe.customers.create({ email: user.email });
 
 	await stripe.subscriptions.create({
-		customer : 'customer.id',
+		customer : customer.id,
 		items    : [ { price: 'price_1HGOLsIcj9StUsGyd5wDVmgs' } ]
 	});
 
